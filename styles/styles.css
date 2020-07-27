@@ -1,0 +1,425 @@
+/*.... INDEX STYLING....*/
+
+html{
+  background-color: black;
+  overflow-X: hidden;
+  scroll-behavior: smooth;
+}
+
+.Top{
+position: relative;
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.inner h1 {
+  line-height: 0.4;
+  text-align: center;
+
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  opacity: 0.8;
+  font-family: 'Cinzel', serif;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+.inner span, #education span, #work span, #projects span, #skills span {
+  display: inline-block;
+  position: relative;
+  line-height: 0.4;
+  
+}
+.inner span:before, .inner span:after, #education span:before, #work span:before, #projects span:before, #skills span:before
+, #education span:after, #work span:after, #projects span:after, #skills span:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 100;
+  width: 350px;
+}
+
+  .inner span:before, #education span:before, #work span:before, #projects span:before, #skills span:before {
+  right: 100%;
+  margin-right: 10%;
+}
+
+  .inner span:after, #education span:after, #work span:after, #projects span:after, #skills span:after {
+  left: 100%;
+  margin-left: 10%;
+}
+
+.inner p {
+  line-height: 0.4;
+  text-align: center;
+
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 20;
+  color: white;
+  opacity: 0.8;
+  font-family: 'Mulish', sans-serif;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+.video-container {
+position: fixed;
+width: 100%;
+height: 100vh;
+padding: 0;
+margin: 0;
+left: 0;
+top: 0;
+overflow: hidden;
+z-index: -1;
+}
+
+.color-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.2;
+}
+
+.Middle{
+
+  border-radius: 20% 40% 20%;
+  width:55%;
+  height: 45%;
+  padding: 2%;
+  background:rgb(70, 70, 70);
+  /*
+  background:linear-gradient( #f5ec74,#45b88c, #e082ec, #64f871) ;
+  background: rgb(41, 41, 41);
+  */
+  opacity: 0.95;
+  margin: 0 auto;
+}
+
+
+.Middle h3{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+  opacity: 0.8;
+}
+
+.Middle p{
+  padding-left: 15%;
+  padding-right: 15%;
+  color: white;
+  font-size: 15px;
+  font-family: 'Mulish', sans-serif;
+  opacity: 0.8;
+}
+
+.Middle img, #education img, #work img, #projects img, #skills img{
+  padding: 1%;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/*....... FOOTER STYLING.....*/
+
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.hireme{
+  margin-bottom: 10%;
+  line-height: 0;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Sacramento', cursive;
+  font-size: 40px;
+  color: white;
+  z-index: 1;
+}
+
+.hireme span {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.hireme span:before,.hireme span:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 10px;
+  width: 200px;
+}
+
+.hireme span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.hireme span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.contact-me{
+  position: center;
+  width: 50%;
+  height: 20%;
+   
+  background-color: black;
+  border-radius: 80px 10px 80px;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+  top: auto;
+  right:auto;
+  margin: 1.5% auto;
+  line-height: auto;
+  padding: 2%;
+}
+
+.hireme a{
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-family: 'Sacramento', cursive;
+  margin: 0 auto;
+
+  font-size: 35px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out; 
+}
+
+#projects a{
+  padding: 0.5%;
+  border-radius: 10px 40px 10px;
+  background-color: rgb(70, 70, 70);
+  margin-left: 25%;
+
+  font-family: 'Mulish', sans-serif;
+  font-weight: lighter;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-me a{      
+  color: white;
+  font-weight: bolder;
+  font-family: 'Mulish', sans-serif;
+  margin: 0 auto;
+
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  padding: 2% 2%;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;   
+}
+
+.contact-me a:link, .hireme a:link, #projects a:link {
+  text-decoration: none;
+}
+
+.contact-me a:visited, .hireme a:visited , #projects a:visited {
+  text-decoration: none;
+}
+
+.contact-me a:hover {
+  color:rgb(243, 34, 69);
+  padding: 10%;
+  max-width: 100%;
+  font-weight: bolder;
+}
+
+.hireme a:hover{
+  color:rgb(243, 34, 69);
+  max-width: 100%;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+#projects a:hover{
+
+  border-radius: 40px 10px 40px;
+
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out; 
+  font-weight: lighter;
+  font-size: 18px;
+  background-color: black;
+  color: rgb(243, 34, 69);
+}
+
+/*....... SECTIONS STYLING.....*/
+
+.section-header{
+  padding-top:10vh;
+  padding-bottom: 10vh;
+  text-align: center;
+}
+
+.section-header a{
+  font-family: 'Cinzel', serif;
+  font-weight: lighter;
+  transition: 0.5s;
+  color: #ffffff;
+  font-size: 150%;
+  text-decoration: none;
+  text-align: center;
+
+  padding: 0% 2%;
+  margin: 0% 4%;
+}
+
+.section-header a:hover {
+  font-size: 150%;
+  border-radius: 50% 10% 50%;
+  font-weight: bolder;
+  background-color: rgb(70, 70, 70);
+  color: rgb(243, 34, 69);
+  padding: 1% 2%;
+  margin: 0% 10%;
+}
+
+#education{
+  border-radius: 40px;
+  padding: 2%;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  opacity: 0.95;
+  font-family: 'Cinzel', serif;
+  height: auto;
+  width: 85%;
+  margin: 2% auto;
+  
+  background:rgb(70, 70, 70);
+  /*background-color: #522b9c;
+  border-radius: 20% 5% 20%;*/
+}
+#education ul{
+  column-count: 2;
+  padding: 2%;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  vertical-align: middle;
+}
+
+#work{
+  border-radius: 40px;
+  padding: 2%;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  opacity: 0.95;
+  font-family: 'Cinzel', serif;
+  height: auto;
+  width: 85%;
+  margin: 2% auto; 
+
+  background:rgb(70, 70, 70);
+  /*background-color: #45b88c;
+  border-radius: 20% 5% 20%;*/
+}
+
+#work ul{
+  padding: 2%;
+  text-align: center;
+  font-size: 15px;
+  text-align: left;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  vertical-align: middle;
+}
+
+#projects{
+  border-radius: 40px;
+  padding: 2%;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  opacity: 0.95;
+  font-family: 'Cinzel', serif;
+  height: auto;
+  width: 85%;
+  margin: 2% auto; 
+
+  background:rgb(70, 70, 70);
+  /*background-color:#e082ec;
+  border-radius: 20% 5% 20%;*/
+}
+
+#projects ul{ 
+  padding: 2%;
+  font-size: 15px;
+  text-align: left;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  vertical-align: middle;
+}
+
+#skills{
+  border-radius: 40px;
+  padding: 2%;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  opacity: 0.95;
+  font-family: 'Cinzel', serif;
+  height: auto;
+  width: 85%;
+  margin: 2% auto; 
+
+  background:rgb(70, 70, 70);
+  /*background-color: #f55858;
+  border-radius: 20% 5% 20%;*/
+}
+#skills ul{
+  padding: 2%;
+  text-align: center;
+  font-size: 15px;
+  text-align: left;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  vertical-align: middle;
+}
+
+hr{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+b{
+  font-size: 18px;
+}
+
+#projects video{
+margin-left:38%;
+}
