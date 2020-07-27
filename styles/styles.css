@@ -108,10 +108,6 @@ z-index: -1;
   height: 45%;
   padding: 2%;
   background:rgb(70, 70, 70);
-  /*
-  background:linear-gradient( #f5ec74,#45b88c, #e082ec, #64f871) ;
-  background: rgb(41, 41, 41);
-  */
   opacity: 0.95;
   margin: 0 auto;
 }
@@ -329,8 +325,6 @@ footer{
   margin: 2% auto;
   
   background:rgb(70, 70, 70);
-  /*background-color: #522b9c;
-  border-radius: 20% 5% 20%;*/
 }
 #education ul{
   column-count: 2;
@@ -355,8 +349,6 @@ footer{
   margin: 2% auto; 
 
   background:rgb(70, 70, 70);
-  /*background-color: #45b88c;
-  border-radius: 20% 5% 20%;*/
 }
 
 #work ul{
@@ -382,8 +374,6 @@ footer{
   margin: 2% auto; 
 
   background:rgb(70, 70, 70);
-  /*background-color:#e082ec;
-  border-radius: 20% 5% 20%;*/
 }
 
 #projects ul{ 
@@ -408,8 +398,6 @@ footer{
   margin: 2% auto; 
 
   background:rgb(70, 70, 70);
-  /*background-color: #f55858;
-  border-radius: 20% 5% 20%;*/
 }
 #skills ul{
   padding: 2%;
