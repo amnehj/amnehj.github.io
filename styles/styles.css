@@ -215,18 +215,22 @@ footer{
   -moz-transition: all 0.5s ease-in-out; 
 }
 
-#projects a{
-  padding: 0.5%;
-  border-radius: 10px 40px 10px;
-  background-color: rgb(70, 70, 70);
-  margin-left: 25%;
 
+#projects a, #work a{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
   font-family: 'Mulish', sans-serif;
-  font-weight: lighter;
-  color: white;
-  font-size: 15px;
+  color: #494949 !important;
   text-decoration: none;
-  cursor: pointer;
+  background: #ffffff;
+  padding: 15px;
+  border: 4px solid #494949 !important;
+  border-radius: 20px;
+  transition: all 0.5s ease 0s;
 }
 
 .contact-me a{      
@@ -266,17 +270,12 @@ footer{
   font-size: 50px;
 }
 
-#projects a:hover{
 
-  border-radius: 40px 10px 40px;
-
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out; 
-  font-weight: lighter;
-  font-size: 18px;
-  background-color: black;
-  color: rgb(243, 34, 69);
+#projects a:hover, #work a:hover{
+color: #ffffff !important;
+background: rgb(243, 34, 69);
+border-color: rgb(243, 34, 69) !important;
+transition: all 0.5s ease 0s;
 }
 
 /*....... SECTIONS STYLING.....*/
