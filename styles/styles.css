@@ -147,7 +147,7 @@ footer{
   text-align: center;
 }
 
-.hireme{
+/* .hireme{
   margin-bottom: 10%;
   line-height: 0;
   text-align: center;
@@ -156,7 +156,7 @@ footer{
   font-size: 40px;
   color: white;
   z-index: 1;
-}
+} 
 
 .hireme span {
   display: inline-block;
@@ -182,7 +182,7 @@ footer{
 .hireme span:after {
   left: 100%;
   margin-left: 15px;
-}
+} */
 
 .contact-me{
   position: center;
@@ -201,7 +201,7 @@ footer{
   padding: 2%;
 }
 
-.hireme a{
+/* .hireme a{
   color: rgb(255, 255, 255);
   font-weight: bolder;
   font-family: 'Sacramento', cursive;
@@ -213,7 +213,7 @@ footer{
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out; 
-}
+} */
 
 
 #projects a, #work a{
@@ -263,12 +263,12 @@ footer{
   font-weight: bolder;
 }
 
-.hireme a:hover{
+/* .hireme a:hover{
   color:rgb(243, 34, 69);
   max-width: 100%;
   font-weight: bolder;
   font-size: 50px;
-}
+} */
 
 
 #projects a:hover, #work a:hover{
