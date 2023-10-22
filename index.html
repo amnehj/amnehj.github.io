@@ -87,22 +87,6 @@ gtag('config', 'UA-173604070-1');
 
 </div>
 
-<div id="education">
-    <span>Education</span>
-
-    <ul>
-        <b><strong>Colorado School of Mines</strong></b>
-        <p>M.Sc. Mechanical Engineering (Thermal Fluid Systems) | Dec. 2019</p>
-        <img src="images/csm-logo.png" alt="Colorado School of Mines Logo" width="28%" height="28%">
-        
-        <b><strong>Jordan University of Science and Technology</strong></b>
-        <p>B.Sc. in Mechanical Engineering (Thermal Power) | Jan. 2017</p>
-        <img src="images/just-logo.png" alt="Jordan University of Science and Technology Logo" width="30%" height="30%">
-
-    </ul>
-
-</div>
-
 
 <div id="work">
     <span>Experience</span>
@@ -111,20 +95,31 @@ gtag('config', 'UA-173604070-1');
         <b><strong>Research and Development Engineer at Alarko - Carrier | Kocaeli, Turkey | Feb. 2021 to Present</strong></b>
         <div><br></div>
 
-        <li>Developed a model-based component matching system for Direct Expansion (DX) coils usingACHP and iterative methods.</li>
-        <li>Conducted simulations of water coils under various Eurovent test conditions for Alarko Fan Coil Units using Python.</li>
-        <li>Performed analysis, defined requirements, and supported aeraulic and thermal testing on fan coil units.</li>
+        <li>Developed a model-based component matching system for Direct Expansion (DX) coils.</li>
+        <ul>
+            <li>Defined a set of parameters related to the geometry and operating conditions of the DX coils.</li>
+            <li>Developed python simulations and used them to perform detailed air and refrigerant side capacity calculations for each DX coil we manufacture.</li>
+            <li>Found a suitable distributor for each DX coil based on capacity per distributor and circuit number.</li>
+        </ul>
+        <li>Conducted simulations of water coils under various Eurovent test conditions for Fan Coil Units using Python.</li>
+        <ul>
+            <li>Defined simulation parameters related to coolant, fin material, tube material properties, as well as FCU sizes, operating modes, and row types.</li>
+            <li>Iterated through each FCU coil data and performed calculations under various Eurovent test conditions.</li>
+            <li>Parsed simulation data and created scripts to export summarized Excel reports using Python.</li>
+        </ul>
         <li>Developed and implemented new methods that significantly improved the product design and system optimization process by integrating Python scripts with Excel datasheets.</li>
+        <ul>
+            <li>Technically evaluated deviation permits and product design changes and ensured the continuity of Eurovent certification on fan coil units.</li>
+            <li>Improved the modular selection programs for Airovision and WinCoil products by developing improved model-based logic that pairs customer application performance requirements with matching products.</li>
+        </ul>
+        <li>Performed analysis, defined requirements, and supported aeraulic and thermal testing on fan coil units.</li>
         <li>Worked on defining new equipment calibration and operation procedures, and organized work among lab personal to ensure that tests are completed correctly, in a timely manner, and in accordance with regulatory standards.</li>
-        <li>Improved the modular selection programs for Airovision and WinCoil products by developing improved modelbased logic that pairs customer application performance requirements with matching products.</li>
-        <li>Technically evaluated deviation permits and product design changes and ensured the continuity of Eurovent certification on fan coil units.</li>
-        <li>Wrote up and maintained system and component level technical documentations and requirements related to air handling unit research and development projects.</li>
-        <li>Worked on multiple air handling unit cost reduction studies, including performing cost optimizations analyses on water coils, plate heat recovery, expansion coils, bypass dampers, run-around coils, and other components.</li>
+        
         <img src="images/alarko-carrier.png" alt="Alarko Carrier logo" width="50%" height="50%">
 
         <hr style="width: 50%;">
 
-        <b><strong>Mechanical Engineer | Freelance (Upwork) | Tyler,Texas, USA | Apr. 2020 to Sep. 2020</strong></b>
+        <b><strong>Mechanical Engineer - Freelance (Upwork) | Remote work during Covid shutdown, USA | Feb. 2020 to Sep. 2020</strong></b>
         <div><br></div>
 
         <li>Python development, embedded system programming (C/C++), and mechanical system design.</li>
@@ -159,7 +154,6 @@ gtag('config', 'UA-173604070-1');
             <li>Simulated the effect of vehicle to grid use on battery degradation over time.</li>
             <li>Studied the effect of optimized vs. unoptimized charging of the vehicle on the grid.</li>
             <li>Calculated the vehicle to grid adoption costs and a time of use electric utility schedule to balance it out.</li>
-
         </ul>
 
         <a href="pdf-files/campus-energy-project.pdf" target="_blank">Campus Energy Project - Summary</a>
@@ -192,30 +186,32 @@ gtag('config', 'UA-173604070-1');
 
 </div>
 
+<div id="education">
+    <span>Education</span>
+
+    <ul>
+        <b><strong>Colorado School of Mines</strong></b>
+        <p>M.Sc. Mechanical Engineering (Thermal Fluid Systems) | Dec. 2019</p>
+        <img src="images/csm-logo.png" alt="Colorado School of Mines Logo" width="28%" height="28%">
+        
+        <b><strong>Jordan University of Science and Technology</strong></b>
+        <p>B.Sc. in Mechanical Engineering (Thermal Power) | Jan. 2017</p>
+        <img src="images/just-logo.png" alt="Jordan University of Science and Technology Logo" width="30%" height="30%">
+
+    </ul>
+
+</div>
+
 <div id="projects">
     <span>Projects</span>
 
     <ul>
 
-        <b><strong>Developed a model-based component matching system for Direct Expansion (DX) coils using ACHP library and iterative methods.</strong></b>
-        <div><br></div>
-        <li>Imports several Python libraries and modules and reads input data from a CSV file located at a specified path.</li>
-        <li>Defines a set of parameters related to the geometry and operating conditions of the DX coils.</li>
-        <li>Loops to perform calculations for each DX coil specified in the input data, Inside this loop and after the calculations for all DX coils are completed, the number of distributors needed for each DX coil is calculated based in the total capacity.</li>
-        <li>The code later finds a suitable distributor for each DX coil from a predefined list based on capacity per distributor and circuit number.</li>
-        <li>Results are stored and printed to a CSV file for further analysis or reporting.</li>
-
-        <b><strong>Conducted simulations of water coils under various Eurovent test conditions for Alarko Fan Coil Units (FCU) using Python.</strong></b>
-        <div><br></div>
-        <li>Reads data from an Excel file containing information about FCU coils and defines constants related to water, fin material, tube material properties, as well as FCU sizes, operating modes, and row types.</li>
-        <li>The code enters a loop that iterates through each FCU coil's data, and for each coil, it performs calculations.</li>
-        <li>After processing all the FCU coils, the code saves and exports the results to a CSV file for further analysis or reporting.</li>
-
         <b><strong>Designed and analysed a passive electric vehicle battery cooling solution.</strong></b>
         <div><br></div>
         <li>A single prismatic cell of a lithium ion battery was modeled along with an integrated cooling fin.</li>
         <li>The single cell model was expanded to a full battery pack simulation using symmetry conditions.</li>
-        <li>Effectiveness of the cooling solution was assessed at different vehicle speeds using CFD analysis for airflow data.</li>
+        <li>The effectiveness of the cooling solution was assessed at different vehicle speeds using CFD.</li>
         <img src="images/heat1.png" alt="Passive Electric Vehicle Battery Thermal Management Solution" width="70%" height="70%">
         <img src="images/heat2.png" alt="Passive Electric Vehicle Battery Thermal Management Solution" width="70%" height="70%">
 
@@ -291,21 +287,18 @@ gtag('config', 'UA-173604070-1');
         <li>Thermodynamic systems analysis and design (HVAC, Engines, Combustion, chemical and phase equilibrium).</li>
         <li>HVAC system design and building energy modeling.</li>
         <li>Design and simulation of fluid mechanical systems.</li>
-        <li>Basic budgeting and engineering economic skills.</li>
+        <li>Budgeting and engineering economic skills.</li>
         <li>Finite element analysis of mechanical and thermal systems</li>
         <li>Mathematical modeling and basic control design of dynamic systems.</li>
         <li>Working knowledge of strain gauges, differential amplifiers, oscilloscopes, and other instrumentation equipment.</li>
         <li>Ability to work on advanced algebraic, differential, numerical and nonlinear mathematical problems.</li>
-        <li>Hands on machining experience (lathes, milling machines, hobbling machines).</li>
         <li>Battery and fuel cell design and simulation.</li>
-
-
 
         <hr style="width: 50%;">
 
         <b><strong>Computer Skills:</strong></b>
         <div><br></div>
-        <li>CAD and FEA packages: PTC Creo, AutoCAD, SolidWorks, ANSYS CFX, ANSYS Fluent.</li>
+        <li>CAD, FEA and CFD packages: PTC Creo, AutoCAD, SolidWorks, ANSYS CFX, ANSYS Fluent.</li>
         <li>Programming languages: Python, Arduino (C/C++), MATLAB, EES, PTC Mathcad, HTML/CSS.</li>
         <li>HVAC thermal modeling and simulation: OpenStudio, BEOpt, Airovision Builder, WinCoil, Coil PC, IPM.</li>
 
@@ -326,10 +319,10 @@ gtag('config', 'UA-173604070-1');
 <footer>
 
     <div class="contact-me">
-        <a>+90(552)453-0341</a>
+        <a>+90 (552) 453 03 41</a>
         <a href="mailto:amneh.aj94@gmail.com">amneh.aj94@gmail.com</a>
         <a href="https://www.linkedin.com/in/amneh-jaber/" target="_blank">LinkedIn</a>
-        <a href="pdf-files/Amneh Jaber (Resume) - 2022.pdf" target="_blank">Resume</a>
+        <a href="pdf-files/Amneh Jaber (Resume) - 2024.pdf" target="_blank">Resume</a>
 
     </div>
 

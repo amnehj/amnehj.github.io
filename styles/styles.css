@@ -140,7 +140,7 @@ justify-content: center;
 
 
 footer{
-  position: fixed;
+  position: sticky;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -208,7 +208,7 @@ footer{
 
 .contact-me a:hover {
   color:rgb(243, 34, 69);
-  padding: 10%;
+  padding: 2% 10%;
   max-width: 100%;
   font-weight: bolder;
 }
@@ -243,10 +243,9 @@ transition: all 0.5s ease 0s;
 }
 
 .section-header a:hover {
-  font-size: 150%;
   border-radius: 50% 10% 50%;
   font-weight: bolder;
-  background-color: rgb(70, 70, 70);
+  background-color: #494949;
   color: rgb(243, 34, 69);
   padding: 1% 2%;
   margin: 0% 10%;
