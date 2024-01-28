@@ -2,25 +2,33 @@
 <html lang="en">
 
 <head>
-    
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173604070-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
 
-gtag('config', 'UA-173604070-1');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173604070-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-173604070-1');
+    </script>
 
     <meta charset="UTF-8">
     <meta name="author" content="Amneh Jaber">
-    <meta name="description" content="Amneh Jaber's portfolio, a Mechanical Engineer with a strong background in thermodynamics, heat transfer and fluid mechanics.">
+    <meta name="description"
+        content="Amneh Jaber's portfolio, a Mechanical Engineer with a strong background in thermodynamics, heat transfer and fluid mechanics.">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Amneh Jaber</title>
-    <link href="styles/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
 
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicomatic/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicomatic/apple-touch-icon-114x114.png" />
@@ -35,7 +43,7 @@ gtag('config', 'UA-173604070-1');
     <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="favicomatic/favicon-128.png" sizes="128x128" />
-    <meta name="application-name" content="Amneh Jaber"/>
+    <meta name="application-name" content="Amneh Jaber" />
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta name="msapplication-TileImage" content="favicomatic/mstile-144x144.png" />
     <meta name="msapplication-square70x70logo" content="favicomatic/mstile-70x70.png" />
@@ -47,9 +55,9 @@ gtag('config', 'UA-173604070-1');
 
 <body>
 
-    <div class="Top">
-        <div class="inner">
-            <h1><span>AMNEH JABER</span></h1>
+    <div class="main">
+        <div class="title">
+            <h1><span style="font-family: 'Reenie Beanie', cursive; font-size: 2em;">AMNEH JABER</span></h1>
             <p>Mechanical Engineer, M.Sc. | Thermal Fluid Systems</p>
         </div>
         <div class="video-container">
@@ -60,287 +68,520 @@ gtag('config', 'UA-173604070-1');
         </div>
     </div>
 
-    <div class="Middle">
+    <div class="AboutMe">
         <img src="images/profile-photo.png" alt="My Photo" width="50%" height="50%">
-        
-        <h3><strong>About Me</strong></h3>
-        <p>I am a dedicated Mechanical Engineer with a diverse professional background and a passion for innovation. I hold a master’s degree in mechanical engineering with a specialization in Thermal
-            Fluid Systems from the Colorado School of Mines, as well as a bachelor’s degree in mechanical engineering with a focus on Thermal Power from Jordan University of Science and Technology.
+
+        <h3><strong>ABOUT ME</strong></h3>
+        <p>I am a dedicated Mechanical Engineer with a diverse professional background and a passion for innovation. I
+            hold a master’s degree in mechanical engineering with a specialization in Thermal
+            Fluid Systems from the Colorado School of Mines, as well as a bachelor’s degree in mechanical engineering
+            with a focus on Thermal Power from Jordan University of Science and Technology.
             <br><br>
-            In my current role as a Research and Development Engineer at Alarko-Carrier, I have performed analysis, defined requirements, and supported aeraulic and thermal testing on fan coil units.
+            In my current role as a Research and Development Engineer at Alarko-Carrier, I have performed analysis,
+            defined requirements, and supported aeraulic and thermal testing on fan coil units.
             <br><br>
-            I have also developed a model-based component matching system for Direct Expansion (DX) coils. This entailed defining parameters related to coil geometry and operating conditions, conducting
-            Python simulations, and finding suitable distributors for each DX coil. Additionally, I have conducted simulations of water coils under various Eurovent test conditions for Fan Coil Units and
+            I have also developed a model-based component matching system for Direct Expansion (DX) coils. This entailed
+            defining parameters related to coil geometry and operating conditions, conducting
+            Python simulations, and finding suitable distributors for each DX coil. Additionally, I have conducted
+            simulations of water coils under various Eurovent test conditions for Fan Coil Units and
             exported summarized Excel reports using Python.
             <br><br>
-            During the COVID-19 shutdown, I extended my skills and experience through remote freelance work in the USA. My projects included embedded system programming and mechanical system design. 
+            During the COVID-19 shutdown, I extended my skills and experience through remote freelance work in the USA.
+            My projects included embedded system programming and mechanical system design.
             <br><br>
-            As a Graduate Student Researcher at the Colorado School of Mines, I delved into building modeling, HVAC, and grid technology. I created multiple building models on OpenStudio, validated 
-            them against utility data, and conducted extensive simulations related to vehicle-to-grid technology. My research skills were also used in analyzing chillers and building energy load data, 
-            calculating electric and cooling loads, and determining the contribution of different buildings and chillers to the total energy load.
+            As a Graduate Student Researcher at the Colorado School of Mines, I delved into building modeling, HVAC, and
+            grid technology. I created multiple building models on OpenStudio, validated
+            them against utility data, and conducted extensive simulations related to vehicle-to-grid technology. My
+            research skills were also used in analyzing chillers and building energy load data,
+            calculating electric and cooling loads, and determining the contribution of different buildings and chillers
+            to the total energy load.
             <br><br>
-            Prior to this, I worked as a Mechanical Project Engineer at Dağgaz, where I was involved in designing Piping and Instrumentation Diagrams (P&ID), managing material lists, and examining 
-            tender documents for odorizing and chemical injection systems. I also have valuable experience gained as a Mechanical Engineering Intern at Queen Alia International Airport, which provided
+            Prior to this, I worked as a Mechanical Project Engineer at Dağgaz, where I was involved in designing Piping
+            and Instrumentation Diagrams (P&ID), managing material lists, and examining
+            tender documents for odorizing and chemical injection systems. I also have valuable experience gained as a
+            Mechanical Engineering Intern at Queen Alia International Airport, which provided
             hands-on HVAC engineering training and exposure to design for manufacturing practices.
             <br><br>
-            My diverse professional background, education, and passion for engineering make me an asset for any project or team, and I am excited to take on new challenges and continue making 
+            My diverse professional background, education, and passion for engineering make me an asset for any project
+            or team, and I am excited to take on new challenges and continue making
             significant contributions to the field of mechanical engineering.
-            
+
         </p>
-        <img src="images/signiture.png" alt="My Signiture" width="93" height="50">
-        
+        <img src="images/signiture.png" alt="My Signiture" width="120px">
+
     </div>
 
-<!-- SECTIONS HTML-->
 
-<div class="section-header">
+    <!-- SECTIONS HTML-->
 
-    <a href="#education">Education</a>
-    <a href="#work">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
+    <div class="section-header">
+        <a class="btn" href="#work-experiance"><img src="icons/experience.png" width="30px"> Experience</a>
+        <a class="btn" href="#education"><img src="icons/education.png" width="30px"> Education</a>
+        <a class="btn" href="#projects"><img src="icons/projects.png" width="30px"> Projects</a>
+        <a class="btn" href="#skills"><img src="icons/skills.png" width="30px"> Skills</a>
+    </div>
 
-</div>
+    <!--MOBILE SECTION HEADER (HAMBURGER MENU)-->
 
+    <div id="mobile-menu">
 
-<div id="work">
-    <span>Experience</span>
+    </div>
+
+    <!--END OF MOBILE MENUE-->
+
+    <div id="work-experiance">
+        <h1>Work Experience</h1>
+
+        <div class="column1">
+            <img src="images/alarko-carrier-logo.png" alt="Alarko Carrier logo" width="70%">
+        </div>
+        <div class="column2">
+            <div id="job-summary">
+                <img src="icons/title.png" width="20px"> Research and Development Engineer <br>
+                <img src="icons/company.png" width="20px"> Alarko - Carrier <br>
+                <img src="icons/location.png" width="20px"> Kocaeli, Türkiye <br>
+                <img src="icons/calender.png" width="20px"> Feb. 2021 to Present
+            </div>
+            <br><br>
+            <div id="job-description">
+                <ul>
+                    <li>Developed a model-based component matching system for Direct Expansion (DX) coils.</li>
+                    <ul>
+                        <li>Defined a set of parameters related to the geometry and operating conditions of the DX
+                            coils.
+                        </li>
+                        <li>Developed python simulations and used them to perform detailed air and refrigerant side
+                            capacity
+                            calculations for each DX coil we manufacture.</li>
+                        <li>Found a suitable distributor for each DX coil based on capacity per distributor and circuit
+                            number.
+                        </li>
+                    </ul>
+                    <li>Conducted simulations of water coils under various Eurovent test conditions for Fan Coil Units
+                        using
+                        Python.</li>
+                    <ul>
+                        <li>Defined simulation parameters related to coolant, fin material, tube material properties, as
+                            well as
+                            FCU sizes, operating modes, and row types.</li>
+                        <li>Iterated through each FCU coil data and performed calculations under various Eurovent test
+                            conditions.</li>
+                        <li>Parsed simulation data and created scripts to export summarized Excel reports using Python.
+                        </li>
+                    </ul>
+                    <li>Developed and implemented new methods that significantly improved the product design and system
+                        optimization process by integrating Python scripts with Excel datasheets.</li>
+                    <ul>
+                        <li>Technically evaluated deviation permits and product design changes and ensured the
+                            continuity of
+                            Eurovent certification on fan coil units.</li>
+                        <li>Improved the modular selection programs for Airovision and WinCoil products by developing
+                            improved
+                            model-based logic that pairs customer application performance requirements with matching
+                            products.
+                        </li>
+                    </ul>
+                    <li>Performed analysis, defined requirements, and supported aeraulic and thermal testing on fan coil
+                        units.
+                    </li>
+                    <li>Worked on defining new equipment calibration and operation procedures, and organized work among
+                        lab
+                        personal to ensure that tests are completed correctly, in a timely manner, and in accordance
+                        with
+                        regulatory standards.</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <hr style="width: 50%;">
+        <br>
+
+        <div class="column1">
+            <img src="images/upwork-logo.png" alt="Upwork logo" width="70%">
+        </div>
+        <div class="column2">
+
+            <div id="job-summary">
+                <img src="icons/title.png" width="20px"> Mechanical Engineer - Freelance (Upwork)<br>
+                <img src="icons/company.png" width="20px"> Remote work during Covid shutdown<br>
+                <img src="icons/location.png" width="20px"> USA <br>
+                <img src="icons/calender.png" width="20px"> Feb. 2020 to Sep. 2020
+            </div>
+            <br><br>
+
+            <div id="job-description">
+                <ul>
+                    <li>Python development, embedded system programming (C/C++), and mechanical system design.</li>
+                    <li>Relevant Freelance Projects:</li>
+                    <ul>
+                        <li>Designed and developed the code of a hidden door linear actuator, driver, and control panel.
+                        </li>
+                        <li>Wrote the embedded code for an AC relay driver panel with user programmable 7 day rolling
+                            window.
+                        </li>
+                        <li>Designed and selected the components of a telescoping optical thermometer for Covid-19
+                            screening.
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <hr style="width: 50%;">
+        <br>
+
+        <div class="column1">
+            <img src="images/csm-logo.png" alt="Colorado School of Mines logo" width="70%">
+        </div>
+        <div class="column2">
+
+            <div id="job-summary">
+                <img src="icons/title.png" width="20px"> Graduate Student Researcher<br>
+                <img src="icons/company.png" width="20px"> Colorado School of Mines <br>
+                <img src="icons/location.png" width="20px"> Colorado, USA <br>
+                <img src="icons/calender.png" width="20px"> Feb. to Dec.2019
+            </div>
+            <br><br>
+
+            <div id="job-description">
+                <ul>
+                    <li>Created multiple Colorado School of Mines HVAC building models on OpenStudio.
+                        <ul>
+                            <li>Modeled multiple school of mines buildings in OpenStudio using mechanical drawings.</li>
+                            <li>Adjusting model parameters for main and secondary equipment using building automation
+                                system data.</li>
+                            <li>Validated the model against billing data for electricity, cooling, and heating loads.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Analyzed chiller and building energy load data on a central plant loop for multiple Colorado
+                        School of Mines buildings.
+                        <ul>
+                            <li>Calculated the electric and cooling loads for the buildings and chillers in a central
+                                plant using sensor data from the building automation system.</li>
+                            <li>Determined the contribution of several buildings and chillers on the total energy load.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Performed a study to evaluate the use of vehicle to grid technology as a solution to grid
+                        instability problems.
+                        <ul>
+                            <li>Simulated a set of residential units using BEOpt and scaled the set to simulate the
+                                entire grid.</li>
+                            <li>Recreated a problematic daily demand curve on a grid level (Duck Curve).</li>
+                            <li>Simulated the effect of vehicle to grid use on battery degradation over time.</li>
+                            <li>Studied the effect of optimized vs. unoptimized charging of the vehicle on the grid.
+                            </li>
+                            <li>Calculated the vehicle to grid adoption costs and a time of use electric utility
+                                schedule to balance it out.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="pdf-files/campus-energy-project.pdf" target="_blank" class="button">Campus Energy Project -
+                    Summary</a>
+                <div><br></div>
+                <a href="pdf-files/hvac-mini-project-report.pdf" target="_blank" class="button">Electric Vehicle Energy
+                    Storage as a Solution to the Duck Curve Problem - Report</a>
+                <div><br></div>
+                <a href="pdf-files/hvac-presentation.pdf" target="_blank" class="button">Electric Vehicle Energy Storage
+                    as a Solution to the Duck Curve Problem - Presentation</a>
+                <br><br>
+            </div>
+
+        </div>
+
+        <br>
+        <hr style="width: 50%;">
+        <br>
+
+        <div class="column1">
+            <img src="images/daggaz-logo.png" alt="Daggaz logo" width="70%">
+        </div>
+        <div class="column2">
+
+            <div id="job-summary">
+                <img src="icons/title.png" width="20px"> Mechanical Project Engineer<br>
+                <img src="icons/company.png" width="20px"> Dağgaz Gas Odorizing and Chemical Dosing Systems<br>
+                <img src="icons/location.png" width="20px"> Kocaeli, Türkiye <br>
+                <img src="icons/calender.png" width="20px"> Jan. to Aug. 2018
+            </div>
+            <br><br>
+
+            <div id="job-description">
+                <ul>
+                    <li>Designed Piping and Instrumentation Diagrams (P&ID) for odorizing and chemical injection
+                        systems.
+                    </li>
+                    <li>Created and managed material lists for designed systems.</li>
+                    <li>Examined and analysed tender documents.</li>
+                    <li>Wrote up technical quotations with summary of the deliverables for multiple projects.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <br>
+        <hr style="width: 50%;">
+        <br>
+
+        <div class="column1">
+            <img src="images/aig-logo.png" alt="Upwork logo" width="70%">
+        </div>
+        <div class="column2">
+
+            <div id="job-summary">
+                <img src="icons/title.png" width="20px"> Mechanical Engineer - Intern<br>
+                <img src="icons/company.png" width="20px"> Queen Alia International Airport (AIG) <br>
+                <img src="icons/location.png" width="20px"> Amman, Jordan <br>
+                <img src="icons/calender.png" width="20px"> Jun. to Sept. 2016
+            </div>
+            <br><br>
+
+            <div id="job-description">
+                <ul>
+                    <li>Received hands on HVAC engineering training at the central utility plant HVAC unit.</li>
+                    <li>Gained some design for manufacturing experience at the workshop and welding unit.</li>
+                    <li>Worked alongside engineers in the wastewater treatment plant, studied requirements, and became
+                        familiar with the filtering and disinfection process.</li>
+                    <br><br>
+                </ul>
+
+            </div>
+        </div>
+        <br>
+        <hr style="width: 50%;">
+        <br>
+    </div>
+
+    <div id="education">
+
+        <h1>Education</h1>
+        <br>
+        <div id="side" style="float:left; width: 50%;">
+            <p>Colorado School of Mines<br>
+                M.Sc. Mechanical Engineering<br>
+                [ Thermal Fluid Systems ]<br>
+                Dec. 2019</p>
+            <img src="images/csm-logo.png" alt="Colorado School of Mines Logo" width="30%">
+        </div>
+
+        <div id="side" style="float:right;  width: 50%;">
+            <p>Jordan University of Science and Technology<br>
+                B.Sc. Mechanical Engineering<br>
+                [ Thermal Power ]<br>
+                Jan. 2017</p>
+            <img src="images/just-logo.png" alt="Jordan University of Science and Technology Logo" width="35%">
+        </div>
+    </div>
+
+    <!--SLIDING PROJECTS SECTION-->
     
-    <ul>
-        <b><strong>Research and Development Engineer at Alarko - Carrier | Kocaeli, Turkey | Feb. 2021 to Present</strong></b>
-        <div><br></div>
 
-        <li>Developed a model-based component matching system for Direct Expansion (DX) coils.</li>
+    <!--END-->
+    <div id="projects">
+
+        <h1>Projects</h1>
         <ul>
-            <li>Defined a set of parameters related to the geometry and operating conditions of the DX coils.</li>
-            <li>Developed python simulations and used them to perform detailed air and refrigerant side capacity calculations for each DX coil we manufacture.</li>
-            <li>Found a suitable distributor for each DX coil based on capacity per distributor and circuit number.</li>
+            <li>Designed and analysed a passive electric vehicle battery cooling solution.</li>
+            <br>
+            <ul>
+                <li>A single prismatic cell of a lithium ion battery was modeled along with an integrated cooling fin.
+                </li>
+                <li>The single cell model was expanded to a full battery pack simulation using symmetry conditions.</li>
+                <li>The effectiveness of the cooling solution was assessed at different vehicle speeds using CFD.</li>
+            </ul>
+
+            <img src="images/heat1.png" alt="Passive Electric Vehicle Battery Thermal Management Solution" width="70%"
+                height="70%">
+            <img src="images/heat2.png" alt="Passive Electric Vehicle Battery Thermal Management Solution" width="70%"
+                height="70%">
+
+            <a href="pdf-files/heat-report.pdf" target="_blank" class="button"> Passive Electric Vehicle Battery Thermal
+                Management
+                Solution - Report</a>
+            <div><br></div>
+            <a href="pdf-files/heat-presentation.pdf" target="_blank" class="button"> Passive Electric Vehicle Battery
+                Thermal
+                Management Solution - Presentation</a>
+            <br>
+            <hr style="width: 50%;">
+            <br>
+            <li>Performed a computational fluid dynamic analysis on a Francis turbine blade design using ANSYS
+                CFX.</li>
+            <br>
+            <ul>
+                <li>Optimized meshing parameters and generated the mesh for the geometry.</li>
+                <li>Setup the solver parameters then configured boundary and initial conditions.</li>
+                <li>Validated the Francis turbine model against prior work.</li>
+                <li>Showed different case studies for different mass flow rates and studied pressures variations.</li>
+            </ul>
+
+
+            <img src="images/cfd1.PNG"
+                alt="Fluid Dynamic Analysis on a Francis Turbine Blade Design" width="45%" height="45%">
+            <img id="" src="images/cfd.gif"
+                alt="Fluid Dynamic Analysis on a Francis Turbine Blade Design" width="50%" height="50%" />
+
+            <a href="pdf-files/cfd-report.pdf" target="_blank" class="button">Fluid Dynamic Analysis on a Francis
+                Turbine Blade Design
+                - Report</a>
+            <br>
+            <hr style="width: 50%;">
+            <br>
+            <li>Performed a transient CFD analysis on air distribution through a house using ANSYS
+                Fluent.</li>
+            <br>
+            <ul>
+                <li>Created a geometry of the conditioned space in ANSYS design modeler.</li>
+                <li>Optimized meshing parameters and setup the solver parameters with the boundary conditions.</li>
+                <li>Simulated the model and created velocity contours and streamline plots.</li>
+            </ul>
+
+            <img src="images/cfd2.png" alt="Transient CFD Analysis on Air Distribution Through a House" width="60%"
+                height="60%">
+
+            <br>
+            <hr style="width: 50%;">
+            <br>
+
+            <li>Used BEOpt to perform an energy footprint optimization study on a fitted house
+                model.</li>
+            <br>
+            <ul>
+                <li>Modeled my apartment using BEOpt (a 2-story apartment unit).</li>
+                <li>Calibrated the model to match measured utility data.</li>
+                <li>Found the most cost-effective retrofit package that will reduce energy usage while having a low
+                    payback
+                    period.</li>
+            </ul>
+            <img src="images/hvac1.PNG" alt="Energy Footprint Optimization Study on a Fitted House Model" width="80%"
+                height="80%">
+
+            <a href="pdf-files/hvac-mini-project-report.pdf" target="_blank" class="button">Energy Footprint
+                Optimization Study on a
+                Fitted House Model - Report</a>
+
+            <br>
+            <hr style="width: 50%;">
+            <br>
+            <li>Performed an optimization study of a thermophotovoltaic system for a commercial
+                building.</li>
+            <br>
+            <ul>
+                <li>Found the inclined irradiation, the peak solar hours, and calculated the derating values for the
+                    site.
+                </li>
+                <li>Found the load required by the building, then determined the number of parallel and series modules
+                    needed.</li>
+                <li>Sized the inverter and calculated the payback period.</li>
+            </ul>
+            <br>
+            <hr style="width: 50%;">
+            <br>
+            <li>Created a balancing robot with obstacle avoidance.</li>
+            <br>
+
+            <ul>
+                <li>Designed the mechanical assembly of the robot using Fusion 360 and adjusted component placement to
+                    increase the moment of inertia while minimizing weight.</li>
+                <li>Assembled the robot and built the circuit to measure distance from an ultrasonic sensor, read
+                    inertial
+                    data from an IMU, and drive two motors.</li>
+                <li>Programmed an Arduino microcontroller to balance the robot using a PID feedback loop and avoid
+                    obstacles.</li>
+            </ul>
+
+            <img src="images/robot.png" alt="Balancing Robot with Obstacle Avoidance" width="640" style="float: left;">
+
+            <video width="230" controls muted>
+                <source src="images/robot.mp4" alt="Balancing Robot Video" type="video/mp4" style="float: right;">
+                Your browser does not support HTML video.
+            </video>
+
         </ul>
-        <li>Conducted simulations of water coils under various Eurovent test conditions for Fan Coil Units using Python.</li>
-        <ul>
-            <li>Defined simulation parameters related to coolant, fin material, tube material properties, as well as FCU sizes, operating modes, and row types.</li>
-            <li>Iterated through each FCU coil data and performed calculations under various Eurovent test conditions.</li>
-            <li>Parsed simulation data and created scripts to export summarized Excel reports using Python.</li>
-        </ul>
-        <li>Developed and implemented new methods that significantly improved the product design and system optimization process by integrating Python scripts with Excel datasheets.</li>
-        <ul>
-            <li>Technically evaluated deviation permits and product design changes and ensured the continuity of Eurovent certification on fan coil units.</li>
-            <li>Improved the modular selection programs for Airovision and WinCoil products by developing improved model-based logic that pairs customer application performance requirements with matching products.</li>
-        </ul>
-        <li>Performed analysis, defined requirements, and supported aeraulic and thermal testing on fan coil units.</li>
-        <li>Worked on defining new equipment calibration and operation procedures, and organized work among lab personal to ensure that tests are completed correctly, in a timely manner, and in accordance with regulatory standards.</li>
-        
-        <img src="images/alarko-carrier.png" alt="Alarko Carrier logo" width="50%" height="50%">
+    </div>
 
-        <hr style="width: 50%;">
 
-        <b><strong>Mechanical Engineer - Freelance (Upwork) | Remote work during Covid shutdown, USA | Feb. 2020 to Sep. 2020</strong></b>
-        <div><br></div>
 
-        <li>Python development, embedded system programming (C/C++), and mechanical system design.</li>
-        <li>Relevant Freelance Projects:</li>
-        <ul>
-            <li>Designed and developed the code of a hidden door linear actuator, driver, and control panel.</li>
-            <li>Wrote the embedded code for an AC relay driver panel with user programmable 7 day rolling window.</li>
-            <li>Designed and selected the components of a telescoping optical thermometer for Covid-19 screening.</li>
-        </ul>
+    <div id="skills">
 
-        <img src="images/upwork-fiverr.png" alt="Upwork logo" width="30%" height="30%">        
+        <h1>Skills</h1>
+        <div class="all-sections">
 
-        <hr style="width: 50%;">
+            <div class="section">
+                <img src="icons/computer-skills.png" width="200px">
+                <ul>
+                    <li>Computer Skills:</li>
+                    <br>
+                    <ul>
+                        <li>CAD, FEA and CFD packages: PTC Creo, AutoCAD, SolidWorks, ANSYS CFX, ANSYS Fluent.</li>
+                        <li>Programming languages: Python, Arduino (C/C++), MATLAB, EES, PTC Mathcad, HTML/CSS.</li>
+                        <li>HVAC thermal modeling and simulation: OpenStudio, BEOpt, Airovision Builder, WinCoil, Coil
+                            PC,
+                            IPM.</li>
+                        <br><br>
 
-        <b><strong>Graduate Student Researcher at Colorado School of Mines | Colorado, USA | Feb. to Dec. 2019</strong></b>
-        <div><br></div>
-        <li>Created multiple Colorado School of Mines HVAC building models on OpenStudio.</li>
-        <ul>
-            <li>Modeled multiple school of mines buildings in OpenStudio using mechanical drawings.</li>
-            <li>Adjusting model parameters for main and secondary equipment using building automation system data.</li>
-            <li>Validated the model against billing data for electricity, cooling, and heating loads.</li>
-        </ul>
-        <li>Analyzed chiller and building energy load data on a central plant loop for multiple Colorado School of Mines buildings.</li>
-        <ul>
-            <li>Calculated the electric and cooling loads for the buildings and chillers in a central plant using sensor data from the building automation system.</li>
-            <li>Determined the contribution of several buildings and chillers on the total energy load.</li>
-        </ul>
-        <li>Performed a study to evaluate the use of vehicle to grid technology as a solution to grid instability problems.</li>
-        <ul>
-            <li>Simulated a set of residential units using BEOpt and scaled the set to simulate the entire grid.</li>
-            <li>Recreated a problematic daily demand curve on a grid level (Duck Curve).</li>
-            <li>Simulated the effect of vehicle to grid use on battery degradation over time.</li>
-            <li>Studied the effect of optimized vs. unoptimized charging of the vehicle on the grid.</li>
-            <li>Calculated the vehicle to grid adoption costs and a time of use electric utility schedule to balance it out.</li>
-        </ul>
+                    </ul>
+                </ul>
+            </div>
 
-        <a href="pdf-files/campus-energy-project.pdf" target="_blank">Campus Energy Project - Summary</a>
-        <div><br></div>
-        <a href="pdf-files/hvac-mini-project-report.pdf" target="_blank">Electric Vehicle Energy Storage as a Solution to the Duck Curve Problem - Report</a>
-        <div><br></div>
-        <a href="pdf-files/hvac-presentation.pdf" target="_blank">Electric Vehicle Energy Storage as a Solution to the Duck Curve Problem - Presentation</a>
-        <div><br></div>
+            <div class="section">
+                <img src="icons/engineering-skills.png" width="200px">
+                <ul>
+                    <li>Engineering Skills:</li>
+                    <br>
+                    <ul>
+                        <li>Thermodynamic systems analysis and design (HVAC, Engines, Combustion, chemical and phase
+                            equilibrium).
+                        </li>
+                        <li>HVAC system design and building energy modeling.</li>
+                        <li>Design and simulation of fluid mechanical systems.</li>
+                        <li>Budgeting and engineering economic skills.</li>
+                        <li>Finite element analysis of mechanical and thermal systems</li>
+                        <li>Mathematical modeling and basic control design of dynamic systems.</li>
+                        <li>Working knowledge of strain gauges, differential amplifiers, oscilloscopes, and other
+                            instrumentation
+                            equipment.</li>
+                        <li>Ability to work on advanced algebraic, differential, numerical and nonlinear mathematical
+                            problems.</li>
+                        <li>Battery and fuel cell design and simulation.</li>
+                        <br><br>
+                    </ul>
+                </ul>
+            </div>
 
-        <img src="images/csm.png" alt="Colorado School of Mines logo" width="50%" height="50%">
-       
-        <hr style="width: 50%;">
+            <div class="section">
+                <img src="icons/languages.png" width="200px">
+                <ul>
+                    <li>Languages:</li>
+                    <br>
+                    <ul>
+                        <li>Arabic: Native proficiency.</li>
+                        <li>English: Full professional working proficiency.</li>
+                        <li>Turkish: Limited working proficiency.</li>
+                        <br><br>
+                    </ul>
+                </ul>
+            </div>
 
-        <b><strong>Mechanical Project Engineer at Dağgaz Gas Odorizing and Chemical Dosing Systems | Kocaeli, Turkey | Jan. to Aug. 2018</strong></b>
-        <div><br></div>
-        <li>Designed Piping and Instrumentation Diagrams (P&ID) for odorizing and chemical injection systems.</li>
-        <li>Created and managed material lists for designed systems.</li>
-        <li>Examined and analysed tender documents.</li>
-        <li>Wrote up technical quotations with summary of the deliverables for multiple projects.</li>
-        <img src="images/daggaz.png" alt="Daggaz logo" width="50%" height="50%">
-
-        <hr style="width: 50%;">
-        <b><strong>Mechanical Engineer at Queen Alia International Airport (AIG) - Intern | Amman, Jordan | Jun. to Sept. 2016</strong></b>
-        <div><br></div>
-        <li>Received hands on HVAC engineering training at the central utility plant HVAC unit.</li>
-        <li>Gained some design for manufacturing experience at the workshop and welding unit.</li>
-        <li>Worked alongside engineers in the wastewater treatment plant, studied requirements, and became familiar with the filtering and disinfection process.</li>
-        <img src="images/aig.png" alt="Airport International Group logo" width="50%" height="50%">
-    </ul>
-
-</div>
-
-<div id="education">
-    <span>Education</span>
-
-    <ul>
-        <b><strong>Colorado School of Mines</strong></b>
-        <p>M.Sc. Mechanical Engineering (Thermal Fluid Systems) | Dec. 2019</p>
-        <img src="images/csm-logo.png" alt="Colorado School of Mines Logo" width="28%" height="28%">
-        
-        <b><strong>Jordan University of Science and Technology</strong></b>
-        <p>B.Sc. in Mechanical Engineering (Thermal Power) | Jan. 2017</p>
-        <img src="images/just-logo.png" alt="Jordan University of Science and Technology Logo" width="30%" height="30%">
-
-    </ul>
-
-</div>
-
-<div id="projects">
-    <span>Projects</span>
-
-    <ul>
-
-        <b><strong>Designed and analysed a passive electric vehicle battery cooling solution.</strong></b>
-        <div><br></div>
-        <li>A single prismatic cell of a lithium ion battery was modeled along with an integrated cooling fin.</li>
-        <li>The single cell model was expanded to a full battery pack simulation using symmetry conditions.</li>
-        <li>The effectiveness of the cooling solution was assessed at different vehicle speeds using CFD.</li>
-        <img src="images/heat1.png" alt="Passive Electric Vehicle Battery Thermal Management Solution" width="70%" height="70%">
-        <img src="images/heat2.png" alt="Passive Electric Vehicle Battery Thermal Management Solution" width="70%" height="70%">
-
-        <div><br></div>
-        <a href="pdf-files/heat-report.pdf" target="_blank"> Passive Electric Vehicle Battery Thermal Management Solution - Report</a>
-        <div><br></div>
-        <a href="pdf-files/heat-presentation.pdf" target="_blank"> Passive Electric Vehicle Battery Thermal Management Solution - Presentation</a>
-
-        <hr style="width: 50%;">
-
-        <b><strong>Performed a computational fluid dynamic analysis on a Francis turbine blade design using ANSYS CFX.</strong></b>
-        <div><br></div>
-        <li>Optimized meshing parameters and generated the mesh for the geometry.</li>
-        <li>Setup the solver parameters then configured boundary and initial conditions.</li>
-        <li>Validated the Francis turbine model against prior work.</li>
-        <li>Showed different case studies for different mass flow rates and studied pressures variations.</li>
-        <img src="images/cfd1.PNG" style="display: inline; border-width: 0px;" alt="Fluid Dynamic Analysis on a Francis Turbine Blade Design" width="45%" height="45%">
-        <img id="" src="images/cfd.gif" style="display: inline; border-width: 0px;" alt="Fluid Dynamic Analysis on a Francis Turbine Blade Design" width="50%" height="50%" />
-        <div><br></div>
-        <a href="pdf-files/cfd-report.pdf" target="_blank">Fluid Dynamic Analysis on a Francis Turbine Blade Design - Report</a>
-
-        <hr style="width: 50%;">
-
-        <b><strong>Performed a transient CFD analysis on air distribution through a house using ANSYS Fluent.</strong></b>
-        <div><br></div>
-        <li>Created a geometry of the conditioned space in ANSYS design modeler.</li>
-        <li>Optimized meshing parameters and setup the solver parameters with the boundary conditions.</li>
-        <li>Simulated the model and created velocity contours and streamline plots.</li>
-        <img src="images/cfd2.png" alt="Transient CFD Analysis on Air Distribution Through a House" width="60%" height="60%">
-
-        <hr style="width: 50%;">
-
-        <b><strong>Used BEOpt to perform an energy footprint optimization study on a fitted house model.</strong></b>
-        <div><br></div>
-        <li>Modeled my apartment using BEOpt (a 2-story apartment unit).</li>
-        <li>Calibrated the model to match measured utility data.</li>
-        <li>Found the most cost-effective retrofit package that will reduce energy usage while having a low payback period.</li>
-        <img src="images/hvac1.PNG" alt="Energy Footprint Optimization Study on a Fitted House Model" width="80%" height="80%">
-        <div><br></div>
-        <a href="pdf-files/hvac-mini-project-report.pdf" target="_blank">Energy Footprint Optimization Study on a Fitted House Model - Report</a>
-
-        <hr style="width: 50%;">
-
-        <b><strong>Performed an optimization study of a thermophotovoltaic system for a commercial building.</strong></b>
-        <div><br></div>
-        <li>Found the inclined irradiation, the peak solar hours, and calculated the derating values for the site.</li>
-        <li>Found the load required by the building, then determined the number of parallel and series modules needed.</li>
-        <li>Sized the inverter and calculated the payback period.</li>
-        
-        <hr style="width: 50%;">
-
-        <b><strong>Created a balancing robot with obstacle avoidance.</strong></b>
-        <div><br></div>
-        <li>Designed the mechanical assembly of the robot using Fusion 360 and adjusted component placement to increase the moment of inertia while minimizing weight.</li>
-        <li>Assembled the robot and built the circuit to measure distance from an ultrasonic sensor, read inertial data from an IMU, and drive two motors.</li>
-        <li>Programmed an Arduino microcontroller to balance the robot using a PID feedback loop and avoid obstacles.</li>
-        <img src="images/robot.png" alt="Balancing Robot with Obstacle Avoidance" width="70%" height="70%">
-        
-        <video width="25%" controls muted>
-            <source src="images/robot.mp4" alt="Balancing Robot Video" type="video/mp4">
-            Your browser does not support HTML video.
-        </video>
-
-    </ul>
-</div>
-
-<div id="skills">
-    <span>Skills</span>
-
-    <ul>
-        <b><strong>Engineering Skills:</strong></b>
-        <div><br></div>
-        <li>Thermodynamic systems analysis and design (HVAC, Engines, Combustion, chemical and phase equilibrium).</li>
-        <li>HVAC system design and building energy modeling.</li>
-        <li>Design and simulation of fluid mechanical systems.</li>
-        <li>Budgeting and engineering economic skills.</li>
-        <li>Finite element analysis of mechanical and thermal systems</li>
-        <li>Mathematical modeling and basic control design of dynamic systems.</li>
-        <li>Working knowledge of strain gauges, differential amplifiers, oscilloscopes, and other instrumentation equipment.</li>
-        <li>Ability to work on advanced algebraic, differential, numerical and nonlinear mathematical problems.</li>
-        <li>Battery and fuel cell design and simulation.</li>
-
-        <hr style="width: 50%;">
-
-        <b><strong>Computer Skills:</strong></b>
-        <div><br></div>
-        <li>CAD, FEA and CFD packages: PTC Creo, AutoCAD, SolidWorks, ANSYS CFX, ANSYS Fluent.</li>
-        <li>Programming languages: Python, Arduino (C/C++), MATLAB, EES, PTC Mathcad, HTML/CSS.</li>
-        <li>HVAC thermal modeling and simulation: OpenStudio, BEOpt, Airovision Builder, WinCoil, Coil PC, IPM.</li>
-
-        <hr style="width: 50%;">
-
-        <b><strong>Languages:</strong></b>
-        <div><br></div>
-        <li>Arabic: Native proficiency.</li>
-        <li>English: Full professional working proficiency.</li>
-        <li>Turkish: Limited working proficiency.</li>
-
-        <img src="images/skills.png" alt="My Profile Photo" width="40%" height="40%">
-    </ul>
-</div>
+        </div>
+        <br><br>
+    </div>
 
 </body>
 
 <footer>
-
     <div class="contact-me">
-        <a>+90 (552) 453 03 41</a>
-        <a href="mailto:amneh.aj94@gmail.com">amneh.aj94@gmail.com</a>
-        <a href="https://www.linkedin.com/in/amneh-jaber/" target="_blank">LinkedIn</a>
-        <a href="pdf-files/Amneh Jaber (Resume) - 2024.pdf" target="_blank">Resume</a>
-
+        <a><img src="icons/phone.png" width="20px"> +90 (552) 453 03 41</a>
+        <a href="mailto:amneh.aj94@gmail.com"><img src="icons/email.png" width="20px"> amneh.aj94@gmail.com</a>
+        <a href="pdf-files/Amneh Jaber (Resume) - 2024.pdf" target="_blank"><img src="icons/resume.png" width="20px">
+            Resume</a>
+        <a href="https://www.linkedin.com/in/amneh-jaber/" target="_blank"><img src="icons/linkedin.png" width="20px">
+            linkedin</a>
     </div>
-
 </footer>
 
 </html>
