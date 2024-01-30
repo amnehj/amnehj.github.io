@@ -61,8 +61,7 @@
             <p>Mechanical Engineer, M.Sc. | Thermal Fluid Systems</p>
         </div>
         <div class="video-container">
-            <div class="color-overlay"></div>
-            <video width="100%" autoplay loop muted>
+            <video autoplay loop muted>
                 <source src="images/background-video.mp4" type="video/mp4">
             </video>
         </div>
@@ -71,7 +70,8 @@
     <div class="AboutMe">
         <img src="images/profile-photo.png" alt="My Photo" width="50%" height="50%">
 
-        <h3><strong>ABOUT ME</strong></h3>
+        <h3>ABOUT ME</h3>
+
         <p>I am a dedicated Mechanical Engineer with a diverse professional background and a passion for innovation. I
             hold a master’s degree in mechanical engineering with a specialization in Thermal
             Fluid Systems from the Colorado School of Mines, as well as a bachelor’s degree in mechanical engineering
@@ -117,14 +117,31 @@
     <div class="section-header">
         <a class="btn" href="#work-experiance"><img src="icons/experience.png" width="30px"> Experience</a>
         <a class="btn" href="#education"><img src="icons/education.png" width="30px"> Education</a>
-        <a class="btn" href="#projects"><img src="icons/projects.png" width="30px"> Projects</a>
+        <a class="btn" href="#slider"><img src="icons/projects.png" width="30px"> Projects</a>
         <a class="btn" href="#skills"><img src="icons/skills.png" width="30px"> Skills</a>
     </div>
 
     <!--MOBILE SECTION HEADER (HAMBURGER MENU)-->
 
-    <div id="mobile-menu">
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
 
+        <ul class="menu__box">
+            <li><a href="#work-experiance"><img src="icons/experience.png" width="30px"> Experience</a></li>
+            <li><a href="#education"><img src="icons/education.png" width="30px"> Education</a></li>
+            <li><a href="#slider"><img src="icons/projects.png" width="30px"> Projects</a></li>
+            <li><a href="#skills"><img src="icons/skills.png" width="30px"> Skills</a></li>
+            <li><a href="pdf-files/Amneh Jaber (Resume) - 2024.pdf" target="_blank"><img src="icons/resume.png"
+                        width="20px"> Resume</a></li>
+            <li><a href="https://www.linkedin.com/in/amneh-jaber/" target="_blank"><img src="icons/linkedin.png"
+                        width="20px"> linkedin</a></li>
+            <li><a href="mailto:amneh.aj94@gmail.com"><img src="icons/email.png" width="20px"> amneh.aj94@gmail.com</a>
+            </li>
+            <li><a><img src="icons/phone.png" width="20px"> +90 (552) 453 03 41</a></li>
+        </ul>
     </div>
 
     <!--END OF MOBILE MENUE-->
@@ -378,133 +395,156 @@
     </div>
 
     <!--SLIDING PROJECTS SECTION-->
-    
 
-    <!--END-->
-    <div id="projects">
+    <div id="slider">
 
-        <h1>Projects</h1>
-        <ul>
-            <li>Designed and analysed a passive electric vehicle battery cooling solution.</li>
-            <br>
-            <ul>
-                <li>A single prismatic cell of a lithium ion battery was modeled along with an integrated cooling fin.
-                </li>
-                <li>The single cell model was expanded to a full battery pack simulation using symmetry conditions.</li>
-                <li>The effectiveness of the cooling solution was assessed at different vehicle speeds using CFD.</li>
-            </ul>
-
-            <img src="images/heat1.png" alt="Passive Electric Vehicle Battery Thermal Management Solution" width="70%"
-                height="70%">
-            <img src="images/heat2.png" alt="Passive Electric Vehicle Battery Thermal Management Solution" width="70%"
-                height="70%">
-
-            <a href="pdf-files/heat-report.pdf" target="_blank" class="button"> Passive Electric Vehicle Battery Thermal
-                Management
-                Solution - Report</a>
-            <div><br></div>
-            <a href="pdf-files/heat-presentation.pdf" target="_blank" class="button"> Passive Electric Vehicle Battery
-                Thermal
-                Management Solution - Presentation</a>
-            <br>
-            <hr style="width: 50%;">
-            <br>
-            <li>Performed a computational fluid dynamic analysis on a Francis turbine blade design using ANSYS
-                CFX.</li>
-            <br>
-            <ul>
-                <li>Optimized meshing parameters and generated the mesh for the geometry.</li>
-                <li>Setup the solver parameters then configured boundary and initial conditions.</li>
-                <li>Validated the Francis turbine model against prior work.</li>
-                <li>Showed different case studies for different mass flow rates and studied pressures variations.</li>
-            </ul>
+        <a href="#slide-1">1</a>
+        <a href="#slide-2">2</a>
+        <a href="#slide-3">3</a>
+        <a href="#slide-4">4</a>
+        <a href="#slide-5">5</a>
+        <a href="#slide-6">6</a>
 
 
-            <img src="images/cfd1.PNG"
-                alt="Fluid Dynamic Analysis on a Francis Turbine Blade Design" width="45%" height="45%">
-            <img id="" src="images/cfd.gif"
-                alt="Fluid Dynamic Analysis on a Francis Turbine Blade Design" width="50%" height="50%" />
+        <div class="slides">
+            <div id="slide-1">
+                <h1>Projects</h1>
 
-            <a href="pdf-files/cfd-report.pdf" target="_blank" class="button">Fluid Dynamic Analysis on a Francis
-                Turbine Blade Design
-                - Report</a>
-            <br>
-            <hr style="width: 50%;">
-            <br>
-            <li>Performed a transient CFD analysis on air distribution through a house using ANSYS
-                Fluent.</li>
-            <br>
-            <ul>
-                <li>Created a geometry of the conditioned space in ANSYS design modeler.</li>
-                <li>Optimized meshing parameters and setup the solver parameters with the boundary conditions.</li>
-                <li>Simulated the model and created velocity contours and streamline plots.</li>
-            </ul>
+                <p>Designed and analysed a passive electric vehicle battery cooling solution.</p>
+                <br>
+                <ul>
+                    <li>A single prismatic cell of a lithium ion battery was modeled along with an integrated cooling
+                        fin.
+                    </li>
+                    <li>The single cell model was expanded to a full battery pack simulation using symmetry conditions.
+                    </li>
+                    <li>The effectiveness of the cooling solution was assessed at different vehicle speeds using CFD.
+                    </li>
+                </ul>
 
-            <img src="images/cfd2.png" alt="Transient CFD Analysis on Air Distribution Through a House" width="60%"
-                height="60%">
+                <img src="images/heat1.png" alt="Passive Electric Vehicle Battery Thermal Management Solution"
+                    width="60%">
+                <img src="images/heat2.png" alt="Passive Electric Vehicle Battery Thermal Management Solution"
+                    width="60%">
+                <br>
 
-            <br>
-            <hr style="width: 50%;">
-            <br>
+                <a href="pdf-files/heat-report.pdf" target="_blank" class="button"> Passive Electric Vehicle Battery
+                    Thermal Management Solution - Report</a>
+                <br>
+                <a href="pdf-files/heat-presentation.pdf" target="_blank" class="button"> Passive Electric Vehicle
+                    Battery Thermal Management Solution - Presentation</a>
 
-            <li>Used BEOpt to perform an energy footprint optimization study on a fitted house
-                model.</li>
-            <br>
-            <ul>
-                <li>Modeled my apartment using BEOpt (a 2-story apartment unit).</li>
-                <li>Calibrated the model to match measured utility data.</li>
-                <li>Found the most cost-effective retrofit package that will reduce energy usage while having a low
-                    payback
-                    period.</li>
-            </ul>
-            <img src="images/hvac1.PNG" alt="Energy Footprint Optimization Study on a Fitted House Model" width="80%"
-                height="80%">
+            </div>
+            <div id="slide-2">
+                <h1>Projects</h1>
 
-            <a href="pdf-files/hvac-mini-project-report.pdf" target="_blank" class="button">Energy Footprint
-                Optimization Study on a
-                Fitted House Model - Report</a>
+                <p>Performed a computational fluid dynamic analysis on a Francis turbine blade design using ANSYS CFX.
+                </p>
+                <br>
+                <ul>
+                    <li>Optimized meshing parameters and generated the mesh for the geometry.</li>
+                    <li>Setup the solver parameters then configured boundary and initial conditions.</li>
+                    <li>Validated the Francis turbine model against prior work.</li>
+                    <li>Showed different case studies for different mass flow rates and studied pressures variations.
+                    </li>
+                </ul>
 
-            <br>
-            <hr style="width: 50%;">
-            <br>
-            <li>Performed an optimization study of a thermophotovoltaic system for a commercial
-                building.</li>
-            <br>
-            <ul>
-                <li>Found the inclined irradiation, the peak solar hours, and calculated the derating values for the
-                    site.
-                </li>
-                <li>Found the load required by the building, then determined the number of parallel and series modules
-                    needed.</li>
-                <li>Sized the inverter and calculated the payback period.</li>
-            </ul>
-            <br>
-            <hr style="width: 50%;">
-            <br>
-            <li>Created a balancing robot with obstacle avoidance.</li>
-            <br>
 
-            <ul>
-                <li>Designed the mechanical assembly of the robot using Fusion 360 and adjusted component placement to
-                    increase the moment of inertia while minimizing weight.</li>
-                <li>Assembled the robot and built the circuit to measure distance from an ultrasonic sensor, read
-                    inertial
-                    data from an IMU, and drive two motors.</li>
-                <li>Programmed an Arduino microcontroller to balance the robot using a PID feedback loop and avoid
-                    obstacles.</li>
-            </ul>
+                <img src="images/cfd1.PNG" alt="Fluid Dynamic Analysis on a Francis Turbine Blade Design" width="50%">
+                <br>
+                <img id="" src="images/cfd.gif" alt="Fluid Dynamic Analysis on a Francis Turbine Blade Design"
+                    width="50%">
 
-            <img src="images/robot.png" alt="Balancing Robot with Obstacle Avoidance" width="640" style="float: left;">
+                <br>
+                <a href="pdf-files/cfd-report.pdf" target="_blank" class="button">Fluid Dynamic Analysis on a Francis
+                    Turbine Blade Design - Report</a>
+            </div>
 
-            <video width="230" controls muted>
-                <source src="images/robot.mp4" alt="Balancing Robot Video" type="video/mp4" style="float: right;">
-                Your browser does not support HTML video.
-            </video>
+            <div id="slide-3">
+                <h1>Projects</h1>
 
-        </ul>
+                <p>Performed a transient CFD analysis on air distribution through a house using ANSYS Fluent.</p>
+                <br>
+                <ul>
+                    <li>Created a geometry of the conditioned space in ANSYS design modeler.</li>
+                    <li>Optimized meshing parameters and setup the solver parameters with the boundary conditions.</li>
+                    <li>Simulated the model and created velocity contours and streamline plots.</li>
+                </ul>
+
+                <img src="images/cfd2.png" alt="Transient CFD Analysis on Air Distribution Through a House" width="70%">
+            </div>
+
+            <div id="slide-4">
+                <h1>Projects</h1>
+
+                <p>Used BEOpt to perform an energy footprint optimization study on a fitted house
+                    model.</p>
+                <br>
+                <ul>
+                    <li>Modeled my apartment using BEOpt (a 2-story apartment unit).</li>
+                    <li>Calibrated the model to match measured utility data.</li>
+                    <li>Found the most cost-effective retrofit package that will reduce energy usage while having a low
+                        payback
+                        period.</li>
+                </ul>
+                <img src="images/hvac1.PNG" alt="Energy Footprint Optimization Study on a Fitted House Model"
+                    width="70%">
+                <br>
+                <a href="pdf-files/hvac-mini-project-report.pdf" target="_blank" class="button">Energy Footprint
+                    Optimization Study on a Fitted House Model - Report</a>
+            </div>
+
+            <div id="slide-5">
+                <h1>Projects</h1>
+
+                <p>Performed an optimization study of a thermophotovoltaic system for a commercial
+                    building.</p>
+                <br>
+                <ul>
+                    <li>Found the inclined irradiation, the peak solar hours, and calculated the derating values for the
+                        site.
+                    </li>
+                    <li>Found the load required by the building, then determined the number of parallel and series
+                        modules
+                        needed.</li>
+                    <li>Sized the inverter and calculated the payback period.</li>
+                </ul>
+
+            </div>
+
+            <div id="slide-6">
+                <h1>Projects</h1>
+
+                <p>Created a balancing robot with obstacle avoidance.</p>
+                <br>
+
+                <ul>
+                    <li>Designed the mechanical assembly of the robot using Fusion 360 and adjusted component placement
+                        to
+                        increase the moment of inertia while minimizing weight.</li>
+                    <li>Assembled the robot and built the circuit to measure distance from an ultrasonic sensor, read
+                        inertial
+                        data from an IMU, and drive two motors.</li>
+                    <li>Programmed an Arduino microcontroller to balance the robot using a PID feedback loop and avoid
+                        obstacles.</li>
+                </ul>
+
+                <img src="images/robot.png" alt="Balancing Robot with Obstacle Avoidance" width="640"
+                    style="float: left;">
+                <br>
+                <video width="230" controls muted>
+                    <source src="images/robot.mp4" alt="Balancing Robot Video" type="video/mp4" style="float: right;">
+                    Your browser does not support HTML video.
+                </video>
+
+                </ul>
+            </div>
+
+        </div>
     </div>
 
 
+    <!--END-->
 
     <div id="skills">
 
@@ -569,6 +609,14 @@
 
         </div>
         <br><br>
+    </div>
+
+    <div class="mobile-footer">
+        <a href="mailto:amneh.aj94@gmail.com"><img src="icons/email.png" width="40px"></a>
+        <a href="https://www.linkedin.com/in/amneh-jaber/" target="_blank"><img src="icons/linkedin.png"
+                width="40px"></a>
+        <a href="pdf-files/Amneh Jaber (Resume) - 2024.pdf" target="_blank"><img src="icons/resume.png"
+                width="40px"></a>
     </div>
 
 </body>

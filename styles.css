@@ -64,13 +64,29 @@ body {
 }
 
 .video-container {
-  position: fixed;
-  padding: 0;
-  margin: 0;
-  left: 0;
+  position: absolute;
   top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   z-index: -1;
+}
+
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%;
+  min-height: 100%;
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* .... ABOUT ME STYLING .... */
@@ -86,7 +102,17 @@ body {
   margin: 0 auto;
 }
 
+body>div.AboutMe>h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  align-content: center;
+  margin: 0;
+}
+
 .AboutMe h3 {
+
   font-size: 3em;
   text-align: center;
   font-family: 'Reenie Beanie', cursive;
@@ -99,8 +125,6 @@ body {
 
 .AboutMe img,
 #education img,
-#projects img,
-#projects video,
 #skills img {
   padding: 1em;
   display: block;
@@ -109,18 +133,7 @@ body {
   height: auto;
 }
 
-#projects img,
-#projects video {
-  padding: 1em;
-  display: block;
-  margin: 0 auto;
-  max-width: 100vw;
-  height: auto;
-  justify-content: space-around;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-}
+
 
 .btn {
   cursor: pointer;
@@ -190,7 +203,6 @@ body {
 
 #work-experiance,
 #education,
-#projects,
 #skills {
   margin-right: 2em;
   margin-left: 2em;
@@ -201,7 +213,7 @@ body {
 
 #work-experiance h1,
 #education h1,
-#projects h1,
+#slider h1,
 #skills h1 {
   font-family: 'Reenie Beanie', cursive;
   font-size: 3em;
@@ -209,12 +221,11 @@ body {
   text-decoration: underline;
   text-underline-offset: 8px;
   padding-top: 1em;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
 #education ul,
-#projects ul,
 #skills ul {
 
   margin-right: 12em;
@@ -281,6 +292,7 @@ body {
   display: block;
   width: fit-content;
   margin-right: 4em;
+  width: 80%;
 }
 
 .button:active {
@@ -323,20 +335,9 @@ body {
 
 }
 
-
 /* .... SLIDING PROJECTS STYLING .... */
 
-
-/* .... END OF SLIDING PROJECTS STYLING .... */
-
-/* .... PROJECTS STYLING .... */
-
-#projects {
-  background-color: beige;
-  padding-left: 10em;
-}
-
-#projects ul {
+#slider ul {
   margin-right: 12em;
   padding-bottom: 1em;
   font-weight: bold;
@@ -344,12 +345,100 @@ body {
   padding-right: 2em;
 }
 
+#slider img,
+#slider video,
+#slider a {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin: 2em;
+
+}
+
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+  background: rgb(89, 19, 122);
+}
+
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slides>div {
+  background-color: white;
+  padding-left: 5em;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  border-radius: 2em;
+  margin-right: 2em;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 60%;
+  height: fit-content;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+
+}
+
+#slide-6 {
+  margin-right: 0;
+}
+
+#slider>a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+
+#slider>a:active {
+  top: 1px;
+}
+
+#slider>a:focus {
+  background: #000;
+}
+
+
 /* .... SKILLS STYLING .... */
 
 #skills {
   margin-top: 2em;
   margin-bottom: 8em;
   background-color: rgb(194, 224, 255);
+  border-bottom-left-radius: 60em 20em;
+  border-bottom-right-radius: 60em 20em;
 }
 
 .all-sections {
@@ -418,7 +507,9 @@ footer {
 
 
 @media all and (min-width:1140px) {
-  #mobile-menu {
+
+  .hamburger-menu,
+  .mobile-footer {
     display: none;
   }
 
@@ -436,6 +527,7 @@ footer {
     padding: 0;
   }
 
+  footer,
   .title span:before,
   .title span:after,
   .section-header {
@@ -449,7 +541,7 @@ footer {
   /***MAIN STYLING***/
 
   .main {
-    height: 25vh;
+    height: 100vh;
   }
 
   .AboutMe {
@@ -486,10 +578,11 @@ footer {
     padding-bottom: 2em;
   }
 
-  #education {
-    margin: 0;
+  #education,
+  #work-experiance {
+    margin: 1em;
     margin-top: 2em;
-    border-radius: 0em;
+    border-radius: 1em;
 
   }
 
@@ -498,30 +591,27 @@ footer {
     float: none !important;
   }
 
-  #projects {
-    margin: 0;
-    margin-top: 2em;
-    border-radius: 0em;
-    padding-left: 0;
-
+  .slides>div {
+    width: 95%;
+    padding: 0.5em;
+    padding-bottom: 2em;
+    margin-right: 0.75em;
   }
 
-  #projects img,
-  #projects video
-  {
-    float: none !important;
-    width:300px !important;
-  }
-
-  .button{
-    margin-right: 1em;
+  #slider img,
+  #slide-6>video,
+  .button {
+    width: 80%;
   }
 
   #skills {
     margin: 0;
     margin-top: 2em;
+    margin-bottom: 6em;
     border-radius: 0;
     padding-left: 0;
+    border-bottom-left-radius: 60em 20em;
+    border-bottom-right-radius: 60em 20em;
 
   }
 
@@ -538,7 +628,7 @@ footer {
     width: 85vw;
   }
 
-  footer{
+  footer {
     position: relative;
   }
 
@@ -550,10 +640,115 @@ footer {
     text-align: center;
     justify-content: center;
     margin: 0;
-}
+  }
 
-.contact-me a {
-  padding: 0;
-}
+  .contact-me a {
+    padding: 0;
+  }
+
+
+  /*** Styling for the hamburger menu ***/
+
+  #menu__toggle {
+    display: none;
+  }
+
+  #menu__toggle:checked+.menu__btn>span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked+.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+
+  #menu__toggle:checked+.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked~.menu__box {
+    left: 0 !important;
+  }
+
+  .menu__btn {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .menu__btn>span,
+  .menu__btn>span::before,
+  .menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: plum;
+    transition-duration: .25s;
+  }
+
+  .menu__btn>span::before {
+    content: '';
+    top: -8px;
+  }
+
+  .menu__btn>span::after {
+    content: '';
+    top: 8px;
+  }
+
+  .menu__box {
+    z-index: 1;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    padding-right: 0.5em;
+    list-style: none;
+    background-color: #6b99b2;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+    text-align: left;
+
+  }
+
+  .menu__box li {
+    text-decoration: none;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    font-weight: bolder;
+    font-size: 2.5em;
+    font-family: 'Reenie Beanie', cursive;
+  }
+
+  a:-webkit-any-link {
+    color: black;
+    text-decoration: none;
+  }
+
+  .mobile-footer {
+    background-color: #000;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .mobile-footer a {
+    padding: 1em;
+  }
 
 }
