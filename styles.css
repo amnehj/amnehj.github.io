@@ -123,14 +123,25 @@ body>div.AboutMe>h3 {
   font-size: 1em;
 }
 
-.AboutMe img,
+.AboutMe img{
+  padding: 1em;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+
 #education img,
 #skills img {
   padding: 1em;
   display: block;
   margin: 0 auto;
-  max-width: 90vw;
+  max-width: 10vw;
   height: auto;
+}
+
+#education img{
+  max-width: 30vw;
+
 }
 
 #education p {
@@ -310,7 +321,7 @@ body>div.AboutMe>h3 {
   font-weight: bold;
 
   margin: 0;
-  padding-right: 2em;
+  padding-right: 4em;
 }
 
 /* .... EDUCATION STYLING .... */
@@ -475,10 +486,10 @@ footer {
 }
 
 .contact-me {
-  width: 50%;
+  width: 70%;
   border-radius: 4em 0.5em 4em;
   background-color: black;
-  margin: 3em auto;
+  margin: 2em auto;
   line-height: 4em;
   text-decoration: none;
   text-align: center;
@@ -491,7 +502,7 @@ footer {
 }
 
 .contact-me a {
-  padding: 1.5em;
+  padding: 1.7em;
   color: white;
   font-weight: bold;
   font-size: 1em;
@@ -569,7 +580,6 @@ footer {
     padding: 0;
   }
 
-  .column1 img,
   body > div.AboutMe > img:nth-child(1),
   .column1 img
   {
@@ -578,7 +588,12 @@ footer {
     align-items: center;
     justify-content: center;
     padding-bottom: 2em;
-    width: 70%;
+    width: 50%;
+  }
+
+  #education img{
+    width: 50%;
+    max-width: none;
   }
 
   
@@ -602,8 +617,12 @@ footer {
     float: none !important;
   }
 
+  .slides {
+    margin: 1em;
+  }
+
   .slides>div {
-    width: 95%;
+    width: 85%;
     padding: 0.5em;
     padding-bottom: 2em;
     margin-right: 0.75em;
@@ -629,6 +648,11 @@ footer {
     border-bottom-right-radius: 60em 20em;
 
   }
+
+  #education img,
+  #skills img {
+  max-width: 40vw;
+}
 
   .all-sections {
     display: flex;
