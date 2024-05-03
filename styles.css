@@ -89,10 +89,7 @@ body {
   border-radius: 26em 10em 26em;
   width: 60vw;
   padding: 2em;
-  background: rgb(238, 174, 202);
-  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-  color: black;
-  opacity: 0.9;
+  background: radial-gradient(circle, rgba(238, 174, 202, 0.9) 0%, rgba(148, 187, 233, 0.9) 100%);
   margin: 0 auto;
 }
 
@@ -543,6 +540,7 @@ footer {
     align-items: center;
     justify-content: center;
     width:70%;
+    opacity: 1;
   }
   #education img{
     width: 50%;
