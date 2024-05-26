@@ -176,6 +176,7 @@ body>div.AboutMe>h3 {
 
 /* .... SECTIONS HEADER STYLING .... */
 .section-header {
+  font-family: 'Ubuntu Sans Mono', cursive;
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
   margin-top: 3em;
   margin-bottom: 3em;
@@ -439,6 +440,7 @@ body>div.AboutMe>h3 {
 
 /* .... FOOTER STYLING .... */
 footer {
+  font-family: 'Ubuntu Sans Mono', cursive;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -464,7 +466,6 @@ footer {
 .contact-me a {
   padding: 1.7em;
   color: white;
-  font-weight: bold;
   font-size: 1em;
   text-align: center;
   transition: all 0.5s ease-in-out;
@@ -688,8 +689,8 @@ footer {
     padding-left: 1em;
     padding-bottom: 0.5em;
     font-weight: bolder;
-    font-size: 2em;
-    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.25em;
+    font-family: 'Ubuntu Sans Mono', cursive;
     color: black;
   }
   .menu__box a:link,
