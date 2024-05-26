@@ -207,11 +207,10 @@ body>div.AboutMe>h3 {
 #education h1,
 #slider h1,
 #skills h1 {
-  font-family: 'Reenie Beanie', cursive;
-  font-size: 3em;
+  font-family: 'Ubuntu Sans Mono', cursive;
+  font-size: 2.5em;
+  font-weight: 100;
   text-align: center;
-  text-decoration: underline;
-  text-underline-offset: 8px;
   margin: 0 auto;
   padding: 0;
   padding-top: 0.5em;
