@@ -539,7 +539,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width:70%;
+    width:50%;
+    padding-bottom: 1em;
     opacity: 1;
   }
   #education img{
