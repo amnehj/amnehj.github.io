@@ -532,6 +532,7 @@ footer {
   .column2 ul{
     padding-right: 0.2em;
   }
+
   body > div.AboutMe > img:nth-child(1),
   .column1 img
   {
@@ -542,6 +543,10 @@ footer {
     width:50%;
     padding-bottom: 1em;
     opacity: 1;
+  }
+
+  body > div.AboutMe > img:nth-child(1){
+    width:70%;
   }
   #education img{
     width: 50%;
