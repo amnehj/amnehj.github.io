@@ -445,7 +445,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100vw;
-  z-index: 20;
+  z-index: 4;
 }
 
 .contact-me {
