@@ -228,7 +228,7 @@ body>div.AboutMe>h3 {
 
 /* .... WORK EXPERIENCE STYLING .... */
 #work-experiance {
-  background-color: #F5EEE6;
+  background-color: rgb(244, 241, 239);
   padding-bottom: 2em;
 }
 
@@ -412,7 +412,7 @@ body>div.AboutMe>h3 {
 #skills {
   margin-top: 2em;
   margin-bottom: 8em;
-  background-color: rgb(194, 224, 255);
+  background-color: rgb(227, 236, 243);
   border-bottom-left-radius: 60em 20em;
   border-bottom-right-radius: 60em 20em;
 }
