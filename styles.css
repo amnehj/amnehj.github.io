@@ -221,7 +221,6 @@ body>div.AboutMe>h3 {
 #skills ul {
   margin-right: 12em;
   padding-bottom: 1em;
-  font-weight: bold;
   margin: 0;
   padding-right: 2em;
 }
@@ -236,6 +235,7 @@ body>div.AboutMe>h3 {
   float: left;
   width: 15%;
   padding-top: 2em;
+  font-weight: bolder;
 }
 
 .column1 img,
@@ -252,6 +252,7 @@ body>div.AboutMe>h3 {
 #job-summary {
   color: rgb(0, 0, 0);
   font-size: larger;
+  font-weight: bold;
   margin-left: 2em;
 }
 
@@ -291,7 +292,6 @@ body>div.AboutMe>h3 {
 .column2 ul {
   margin-right: 12em;
   padding-bottom: 1em;
-  font-weight: bold;
   margin: 0;
   padding-right: 4em;
 }
@@ -317,13 +317,6 @@ body>div.AboutMe>h3 {
 }
 
 /* .... SLIDING PROJECTS STYLING .... */
-#slider ul {
-  margin-right: 12em;
-  padding-bottom: 1em;
-  font-weight: bold;
-  margin: 0;
-  padding-right: 2em;
-}
 
 #slider img,
 #slider video,
@@ -337,6 +330,15 @@ body>div.AboutMe>h3 {
   width: 100%;
   text-align: center;
   overflow: hidden;
+  font-weight: bold;
+}
+
+#slider ul {
+  font-weight: normal;
+  margin-right: 12em;
+  padding-bottom: 1em;
+  margin: 0;
+  padding-right: 2em;
 }
 
 .slides {
@@ -522,6 +524,10 @@ footer {
     border-top-left-radius: 0% 0%;
     border-top-right-radius: 0% 0%;
     border-radius: 0;
+  }
+
+  #work-experiance > div:nth-child(2) > img{
+    padding-top: 2em;
   }
   .column1,
   .column2 {
